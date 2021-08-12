@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Student Records</title>
+</head>
+<body>
+    <table>
+        <thread>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email ID</th>
+                <th>Qualifications</th>
+                <th>Stream</th>
+            </tr>
+        </thread>
+        {% for s in students %}
+            <tr>
+                {% for i in range(100) %}
+                    <td>{{ s[i] }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

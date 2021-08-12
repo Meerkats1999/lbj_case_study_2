@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Student by ID</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('search') }}">
+        <label>Student ID <input type="text" name="id" id="id"></label><br>
+        <button class="btn">Search for Student</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Student</title>
+</head>
+<body>
+    <form method = "POST" action="{{ url_for('add') }}">
+        <label>Student ID <input type="text" name="id" id="id"></label><br>
+        <label>Student Name <input type="text" name="name" id="name"></label><br>
+        <label>Gender <input type="checkbox" name="gender" value="male" id="male">Male
+            <input type="checkbox" name="gender" value="female" id="female">Female</label><br>
+        <label>DOB <input type="date" name="dob" id="dob"></label><br>
+        <label>City <input type="text" name="city" id="city"></label><br>
+        <label>State<input type="text" name="state" id="state"></label><br>
+        <label>Email ID<input type="email" name="email" id="email"></label><br>
+        <label>Qualification<input type="text" name="qual" id="qual"></label><br>
+        <label>Stream<input type="text" name="stream" id="stream"></label><br>
+        <button class="btn">Register</button>
+    </form>
+</body>
+</html>
